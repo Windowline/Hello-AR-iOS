@@ -17,19 +17,11 @@ struct ContentView : View {
 struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
-        
         let arView = ARView(frame: .zero)
         arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
-        
-        let anchor = AnchorEntity(plane: .horizontal)
-        
         context.coordinator.view = arView
         
-        let mat = SimpleMaterial(color: .blue, isMetallic: true)
-        let box = ModelEntity(mesh: MeshResource.generateBox(size: 0.3), materials: [mat])
-        box.generateCollisionShapes(recursive: true)
-            
-        anchor.addChild(box)
+        let anchor = AnchorEntity(plane: .horizontal)
         arView.scene.anchors.append(anchor)
         
         return arView

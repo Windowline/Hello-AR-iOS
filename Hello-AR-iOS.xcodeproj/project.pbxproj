@@ -12,6 +12,8 @@
 		37F3E8352C51CB3B0069B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F3E8342C51CB3B0069B7B4 /* Assets.xcassets */; };
 		37F3E8382C51CB3B0069B7B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F3E8372C51CB3B0069B7B4 /* Preview Assets.xcassets */; };
 		37F3E85B2C51CCF00069B7B4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3E85A2C51CCF00069B7B4 /* Coordinator.swift */; };
+		37F3E85D2C51D99E0069B7B4 /* robot_walk_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 37F3E85C2C51D99E0069B7B4 /* robot_walk_idle.usdz */; };
+		37F3E85F2C51E5A10069B7B4 /* LunarRover.reality in Resources */ = {isa = PBXBuildFile; fileRef = 37F3E85E2C51E4A20069B7B4 /* LunarRover.reality */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		37F3E83D2C51CB3B0069B7B4 /* Hello-AR-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-AR-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F3E8472C51CB3B0069B7B4 /* Hello-AR-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-AR-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F3E85A2C51CCF00069B7B4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		37F3E85C2C51D99E0069B7B4 /* robot_walk_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = robot_walk_idle.usdz; path = ../../../Downloads/robot_walk_idle.usdz; sourceTree = "<group>"; };
+		37F3E85E2C51E4A20069B7B4 /* LunarRover.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = LunarRover.reality; path = ../../../Downloads/LunarRover.reality; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 		37F3E82F2C51CB3A0069B7B4 /* Hello-AR-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				37F3E85E2C51E4A20069B7B4 /* LunarRover.reality */,
+				37F3E85C2C51D99E0069B7B4 /* robot_walk_idle.usdz */,
 				37F3E8302C51CB3A0069B7B4 /* AppDelegate.swift */,
 				37F3E8322C51CB3A0069B7B4 /* ContentView.swift */,
 				37F3E8342C51CB3B0069B7B4 /* Assets.xcassets */,
@@ -211,6 +217,8 @@
 			files = (
 				37F3E8382C51CB3B0069B7B4 /* Preview Assets.xcassets in Resources */,
 				37F3E8352C51CB3B0069B7B4 /* Assets.xcassets in Resources */,
+				37F3E85F2C51E5A10069B7B4 /* LunarRover.reality in Resources */,
+				37F3E85D2C51D99E0069B7B4 /* robot_walk_idle.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
