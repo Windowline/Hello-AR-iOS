@@ -2,7 +2,7 @@ import Foundation
 import ARKit
 import RealityKit
 
-class Coordinator : NSObject, ARSessionDelegate {
+class Coordinator : NSObject {
         
     weak var view: ARView?
     
@@ -14,17 +14,12 @@ class Coordinator : NSObject, ARSessionDelegate {
         let results = view.raycast(from: tapLoc, allowing: .estimatedPlane, alignment: .horizontal)
         
         if let result = results.first {
-            let anchor = ARAnchor(name: "Plane", transform: result.worldTransform)
-            view.session.add(anchor: anchor)
-            
-            let mat = SimpleMaterial(color: .blue, isMetallic: true)
-            let boxEntity = ModelEntity(mesh: MeshResource.generateBox(size: 0.3), materials: [mat])
-            
-            
-            let anchorEntity = AnchorEntity(anchor: anchor)
+            let anchorEntity = AnchorEntity(raycastResult: result)
+            let boxEntity = ModelEntity(mesh: MeshResource.generateBox(size: 0.3), materials: [SimpleMaterial(color: .blue, isMetallic: true)])
             anchorEntity.addChild(boxEntity)
-            
             view.scene.addAnchor(anchorEntity)
+            
+            view.installGestures(.all, for: boxEntity)
         }
         
         if let entity = view.entity(at: tapLoc) as? ModelEntity {
