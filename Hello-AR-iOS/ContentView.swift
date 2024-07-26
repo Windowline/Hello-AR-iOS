@@ -1,29 +1,20 @@
-//
-//  ContentView.swift
-//  Hello-AR-iOS
-//
-//  Created by 박창선 on 7/25/24.
-//
-
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct ContentView : View {
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        return ARViewContainer().edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
+        
         let arView = ARView(frame: .zero)
-        arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap)))
         context.coordinator.view = arView
-        
-        let anchor = AnchorEntity(plane: .horizontal)
-        arView.scene.anchors.append(anchor)
-        
+        context.coordinator.buildEnvironment()
         return arView
     }
     
@@ -31,11 +22,13 @@ struct ARViewContainer: UIViewRepresentable {
         Coordinator()
     }
     
-    
     func updateUIView(_ uiView: ARView, context: Context) {}
-    
 }
 
-#Preview {
-    ContentView()
+#if DEBUG
+struct ContentView_Previews : PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
+#endif

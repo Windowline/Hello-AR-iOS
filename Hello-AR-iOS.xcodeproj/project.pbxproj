@@ -14,6 +14,7 @@
 		37F3E85B2C51CCF00069B7B4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3E85A2C51CCF00069B7B4 /* Coordinator.swift */; };
 		37F3E85D2C51D99E0069B7B4 /* robot_walk_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 37F3E85C2C51D99E0069B7B4 /* robot_walk_idle.usdz */; };
 		37F3E85F2C51E5A10069B7B4 /* LunarRover.reality in Resources */ = {isa = PBXBuildFile; fileRef = 37F3E85E2C51E4A20069B7B4 /* LunarRover.reality */; };
+		37F3E8612C5232F50069B7B4 /* MovableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3E8602C5232F50069B7B4 /* MovableEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		37F3E85A2C51CCF00069B7B4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		37F3E85C2C51D99E0069B7B4 /* robot_walk_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = robot_walk_idle.usdz; path = ../../../Downloads/robot_walk_idle.usdz; sourceTree = "<group>"; };
 		37F3E85E2C51E4A20069B7B4 /* LunarRover.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = LunarRover.reality; path = ../../../Downloads/LunarRover.reality; sourceTree = "<group>"; };
+		37F3E8602C5232F50069B7B4 /* MovableEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				37F3E8342C51CB3B0069B7B4 /* Assets.xcassets */,
 				37F3E8362C51CB3B0069B7B4 /* Preview Content */,
 				37F3E85A2C51CCF00069B7B4 /* Coordinator.swift */,
+				37F3E8602C5232F50069B7B4 /* MovableEntity.swift */,
 			);
 			path = "Hello-AR-iOS";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F3E8332C51CB3A0069B7B4 /* ContentView.swift in Sources */,
+				37F3E8612C5232F50069B7B4 /* MovableEntity.swift in Sources */,
 				37F3E8312C51CB3A0069B7B4 /* AppDelegate.swift in Sources */,
 				37F3E85B2C51CCF00069B7B4 /* Coordinator.swift in Sources */,
 			);

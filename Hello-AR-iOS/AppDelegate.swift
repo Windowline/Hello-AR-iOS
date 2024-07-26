@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Hello-AR-iOS
-//
-//  Created by 박창선 on 7/25/24.
-//
-
 import UIKit
 import SwiftUI
 
